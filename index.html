@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Nsofwa | Computing Student, Telecom & Security Projects, Lusaka</title>
+<meta name="description" content="Portfolio of John Nsofwa, Bachelor of Science in Computing student at Cavendish University Zambia. Projects, certificates and maths tutoring.">
+<meta property="og:title" content="John Nsofwa | Portfolio">
+<meta property="og:description" content="Computing student, web builder and maths tutor in Lusaka, Zambia.">
+<meta property="og:image" content="photo.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"John Nsofwa","email":"johnnsofwa200@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Lusaka","addressCountry":"ZM"},"alumniOf":"Cavendish University Zambia","jobTitle":"Bachelor of Science in Computing student"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8faf8;--surface:#fff;--ink:#0f1714;--muted:#5c7368;--green:#047857;--bright:#059669;--line:#e2e8e4;--on-green:#fff;--chip:#edf4f0;--glow:rgba(5,150,105,.18)}
+:root[data-theme="dark"]{--bg:#090d0b;--surface:#121b16;--ink:#f0f4f1;--muted:#8ca397;--green:#10b981;--bright:#34d399;--line:#1e3026;--on-green:#06130d;--chip:#17261e;--glow:rgba(16,185,129,.25)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Plus Jakarta Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Plus Jakarta Sans","Plus Jakarta Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--bright)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--bright);outline-offset:3px}
+.wrap{max-width:64rem;margin:0 auto;padding:0 1.25rem}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--bright);z-index:40}
+header.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:3.6rem}
+header.top b{font-family:"Plus Jakarta Sans",sans-serif;font-size:1.15rem}
+nav{display:flex;align-items:center;gap:1.1rem}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--bright)}
+nav a.on{color:var(--ink);border-color:var(--bright)}
+@media(max-width:46rem){nav a:not(.keep){display:none}}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:2rem;padding:.3rem .8rem;font:inherit;font-size:.9rem;cursor:pointer}
+.hero{display:grid;gap:2rem;align-items:center;padding:3rem 0 1rem}
+@media(min-width:50rem){.hero{grid-template-columns:1.3fr 1fr;padding-top:4.5rem}}
+.hero h1{font-size:clamp(2.4rem,7.5vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+.hero .lead{max-width:34rem;font-size:1.2rem;color:var(--muted);margin:1.2rem 0 .8rem}
+.now{color:var(--muted);margin:0 0 1.5rem;min-height:1.7em}
+#type{color:var(--ink);font-weight:600;border-right:2px solid var(--bright);padding-right:2px}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:.6rem;font-weight:600;text-decoration:none;margin:0 .6rem .6rem 0;border:0;font-size:1rem;font-family:inherit;cursor:pointer}
+.btn.p{background:var(--green);color:var(--on-green)}
+.btn.s{border:1.5px solid var(--line);color:var(--ink);background:none}
+.facts{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:1.4rem;color:var(--muted);font-size:.95rem}
+.facts b{display:block;color:var(--ink);font-family:"Plus Jakarta Sans",sans-serif;font-size:1.5rem}
+.portrait{position:relative;max-width:22rem;margin:0 auto;width:100%}
+.portrait::before{content:"";position:absolute;inset:-.9rem -.9rem .9rem .9rem;border:2px solid var(--bright);border-radius:999px 999px 1.2rem 1.2rem}
+.portrait img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 1.2rem 1.2rem;background:var(--green)}
+section{padding:4.5rem 0 0}
+h2{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:.6rem}
+.sub{color:var(--muted);max-width:38rem;margin:0 0 1.6rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column;gap:.6rem}
+.card h3{font-size:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto;padding-top:.4rem}
+.tags span{background:var(--chip);border-radius:2rem;padding:.15rem .7rem;font-size:.85rem}
+.status{font-size:.85rem;color:var(--bright);font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.filters button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:2rem;padding:.35rem 1rem;font:inherit;font-size:.95rem;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--green);color:var(--on-green);border-color:var(--green)}
+.card[hidden]{display:none}
+.certs{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}
+.certs .card{padding:0;overflow:hidden;gap:0}
+.certs button.thumb{border:0;padding:0;background:none;cursor:zoom-in;display:block}
+.certs img{width:100%;height:auto;display:block;border-bottom:1px solid var(--line)}
+.certs .body{padding:1.2rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+.certs .body .btn{margin:.3rem 0 0;align-self:flex-start;padding:.55rem 1rem}
+dialog{border:0;padding:0;background:none;max-width:min(94vw,60rem)}
+dialog::backdrop{background:rgba(5,12,9,.8)}
+dialog img{width:100%;height:auto;display:block;border-radius:.8rem;background:#fff}
+dialog button{position:absolute;top:.6rem;right:.6rem}
+.tl{border-left:3px solid var(--bright);padding-left:1.3rem;margin:0;list-style:none}
+.tl li{margin-bottom:1.3rem}.tl b{display:block}.tl span{color:var(--muted)}
+.contact{background:var(--green);color:var(--on-green);border-radius:1.5rem;padding:clamp(1.8rem,5vw,3.5rem);display:grid;gap:2rem}
+@media(min-width:50rem){.contact{grid-template-columns:1fr 1fr}}
+.contact h2{margin-bottom:.8rem}
+.contact p{margin:0 0 1rem}
+.contact label{display:block;font-size:.95rem;margin-bottom:.8rem}
+.contact input,.contact textarea{display:block;width:100%;margin-top:.25rem;padding:.65rem .8rem;border-radius:.5rem;border:1px solid transparent;font:inherit;background:#fff;color:#14201b}
+.contact .btn.p{background:#0b1410;color:#e8f1ec}
+.contact .btn.s{border-color:#fff;color:#fff}
+.acts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.4rem}
+.acts button{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:.5rem;padding:.3rem .8rem;font:inherit;font-size:.9rem;cursor:pointer}
+.acts a{font-size:.9rem;font-weight:600}
+.ussd{display:grid;gap:1.5rem;margin-top:2.5rem;align-items:center}
+@media(min-width:48rem){.ussd{grid-template-columns:20rem 1fr}}
+.phone{background:#0b1410;border-radius:1.6rem;padding:1.1rem;border:3px solid #26372e;max-width:20rem;width:100%}
+.phone pre{margin:0 0 .8rem;min-height:11rem;background:#d9efe3;color:#0b1410;border-radius:.6rem;padding:.8rem;white-space:pre-wrap;font:500 .95rem/1.4 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+.phone form{display:flex;gap:.5rem}
+.phone input{flex:1;min-width:0;padding:.55rem .7rem;border-radius:.5rem;border:0;font:inherit}
+.phone .btn{margin:0;padding:.55rem 1rem}
+.phone .btn.p{background:var(--bright);color:#08130e}
+.phone #dial{width:100%;margin-top:.6rem;color:#e8f1ec;border-color:#3a5247}
+.phone button:disabled{opacity:.5;cursor:not-allowed}
+.steps{color:var(--muted);padding-left:1.2rem;margin:0}
+#cd{background:var(--surface);color:var(--ink);border-radius:1rem;padding:1.2rem;width:min(94vw,52rem)}
+#cd button{position:static}
+#cd .bar2{display:flex;justify-content:space-between;align-items:center;gap:.6rem;margin-bottom:.8rem;flex-wrap:wrap}
+#cd .bar2 div{display:flex;gap:.5rem}
+#cd .btn{margin:0;padding:.45rem 1rem}
+#cd pre{margin:0;max-height:65vh;overflow:auto;background:#0b1410;color:#d7efe3;padding:1rem;border-radius:.6rem;font:.85rem/1.5 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+#cd .note{color:var(--muted);font-size:.9rem;margin:.8rem 0 0}
+.logo{display:flex;align-items:center;gap:.5rem}
+.logo i{width:8px;height:8px;border-radius:50%;background:var(--bright);box-shadow:0 0 10px var(--bright)}
+.badge{display:inline-block;background:var(--chip);border:1px solid var(--line);color:var(--bright);border-radius:2rem;padding:.3rem .9rem;font-size:.85rem;font-weight:600;margin-bottom:1.1rem}
+.portrait img{box-shadow:0 0 70px var(--glow)}
+.card{transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--bright);transform:translateY(-2px)}
+.tabs{display:flex;gap:.4rem;margin-bottom:.8rem}
+.tabs button{flex:1;border:1px solid #3a5247;background:none;color:#e8f1ec;border-radius:.5rem;padding:.35rem .4rem;font:inherit;font-size:.85rem;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--bright);color:#08130e;border-color:var(--bright)}
+.phone.term{background:#000;border-color:#1b3829;border-radius:.9rem}
+.phone.term pre{background:#050a07;color:#34d399;border:1px solid #14301f}
+.phone.term input{background:#0c1a13;color:#fff;font-family:"JetBrains Mono",monospace}
+#tmode{width:100%;margin-top:.6rem;color:#e8f1ec;border-color:#3a5247}
+.contact{color:#fff}
+#top{position:fixed;right:1rem;bottom:1rem;width:2.8rem;height:2.8rem;border-radius:50%;border:0;background:var(--green);color:var(--on-green);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+#top.show{opacity:1;pointer-events:auto}
+footer{margin-top:4rem;padding:1.6rem 0 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.js .rv.in{opacity:1;transform:none}
+@media print{header.top,#theme,#top,#bar{display:none}.js .rv{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header class="top"><div class="wrap">
+  <b class="logo"><i></i>John Nsofwa</b>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#tutoring">Tutoring</a><a href="#contact" class="keep">Contact</a><button id="theme" type="button" aria-label="Toggle dark mode">Dark</button></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div>
+    <div class="badge">Open to internships and projects</div>
+    <h1>Computing student, web builder and maths tutor.</h1>
+    <p class="lead">I’m John Nsofwa, a Bachelor of Science in Computing student at Cavendish University Zambia. I build websites, study cyber security and help students pass Mathematics.</p>
+    <p class="now">Currently working on: <span id="type">web projects</span></p>
+    <a class="btn p" href="#projects">View projects</a><a class="btn s" href="#contact">Get in touch</a>
+    <div class="facts">
+      <div><b>Year 3</b>BSc Computing</div>
+      <div><b><span data-to="3">3</span></b>Maths courses tutored</div>
+      <div><b><span data-to="2">2</span></b>Certificates earned</div>
+    </div>
+  </div>
+  <div class="portrait"><img src="photo.jpg" alt="John Nsofwa standing in front of the Cavendish University Elevate sign" width="720" height="900"></div>
+</div>
+
+<section id="about" class="rv">
+  <h2>About</h2>
+  <p class="sub">I started at Cavendish University Zambia in 2024 and I’m now in my third year. I’m interested in entrepreneurship and in building technology that works for the African market.</p>
+  <div class="grid">
+    <div class="card"><h3>Student</h3><p>Bachelor of Science in Computing, with coursework in algorithms, high performance computing, information assurance and research methods.</p></div>
+    <div class="card"><h3>Tutor</h3><p>Since 2026 I have tutored Foundation Mathematics I, Foundation Mathematics II and Discrete Mathematics.</p></div>
+    <div class="card"><h3>Builder</h3><p>I build websites and software systems, and I am learning how to manage projects across borders.</p></div>
+  </div>
+</section>
+
+<section id="skills" class="rv">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Web</h3><div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>WordPress</span></div></div>
+    <div class="card"><h3>Programming</h3><div class="tags"><span>Python</span><span>C++</span><span>Algorithms</span></div></div>
+    <div class="card"><h3>Security</h3><div class="tags"><span>Wireshark</span><span>Nmap</span><span>Windows Firewall</span><span>Event Viewer</span></div></div>
+    <div class="card"><h3>Data</h3><div class="tags"><span>Excel</span><span>SPSS</span><span>Statistics</span></div></div>
+    <div class="card"><h3>Professional</h3><div class="tags"><span>Project planning</span><span>Teamwork</span><span>Communication</span><span>Decision making</span><span>Time management</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="rv">
+  <h2>Projects</h2>
+  <p class="sub">Selected coursework and group work. Use the filters to narrow the list.</p>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="web" aria-pressed="false">Web</button>
+    <button type="button" data-f="security" aria-pressed="false">Security</button>
+    <button type="button" data-f="code" aria-pressed="false">Programming</button>
+  </div>
+  <div class="grid" id="plist">
+    <div class="card" data-c="web code"><span class="status">Coursework (demo code)</span><h3>Retail and Inventory System</h3><p>Stock and sales tracking in Zambian Kwacha, with low-stock warnings and daily sales totals.</p><div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>SQLite</span></div><div class="acts"><button type="button" data-code="inv" data-t="inventory.php">View PHP code</button></div></div>
+    <div class="card" data-c="security"><span class="status">Group project (demo code)</span><h3>Cyber security incident response</h3><p>An incident response case study. The demo script flags brute-force logins in a log file.</p><div class="tags"><span>Wireshark</span><span>Nmap</span><span>Firewall</span><span>Python</span></div><div class="acts"><button type="button" data-code="log" data-t="log_analyzer.py">View Python code</button></div></div>
+    <div class="card" data-c="code"><span class="status">Coursework (demo code)</span><h3>USSD mobile money for Zambia</h3><p>A USSD menu in Kwacha: balance, send money, airtime and mini statement, with +260 number checks.</p><div class="tags"><span>Python</span><span>C++</span><span>USSD</span></div><div class="acts"><button type="button" data-code="py" data-t="ussd_zambia.py">Python code</button><button type="button" data-code="cpp" data-t="ussd_zambia.cpp">C++ code</button><a href="#ussd" class="elink" data-e="zed">Try it live</a></div><div class="card" data-c="code"><span class="status">Unofficial demo</span><h3>Airtel-style *117# USSD simulator</h3><p>A menu simulator in C++ with Ikali bundles, data packs, buy for other, balance and an airtime loan. Made-up prices, not connected to Airtel.</p><div class="tags"><span>C++</span><span>JavaScript</span><span>USSD</span></div><div class="acts"><button type="button" data-code="air" data-t="ussd_airtel.cpp">C++ code</button><a href="#ussd" class="elink" data-e="air">Try it live</a></div></div>
+  </div>
+  <div id="ussd" class="ussd">
+    <div class="phone"><div class="tabs" role="group" aria-label="Choose a demo"><button type="button" data-e="zed" aria-pressed="true">ZedPay</button><button type="button" data-e="air" aria-pressed="false">Airtel-style *117#</button></div><pre id="scr" aria-live="polite">Press Dial to start.</pre>
+      <form id="uf"><input id="uin" inputmode="numeric" autocomplete="off" aria-label="USSD input" disabled><button class="btn p" id="usend" type="submit" disabled>Send</button></form>
+      <button class="btn s" id="dial" type="button">Dial *123#</button><button class="btn s" id="tmode" type="button" aria-pressed="false">Terminal view</button></div>
+    <div><h3>Try the USSD demos</h3><p class="sub" id="ed"></p><ol class="steps" id="steps"></ol></div>
+  </div>
+</section>
+
+<section id="certificates" class="rv">
+  <h2>Certificates</h2>
+  <p class="sub">Select a certificate to view it full size.</p>
+  <div class="certs">
+    <div class="card">
+      <button class="thumb" type="button" aria-label="View the WordPress certificate full size"><img src="certificate.jpg" alt="Coursera Project Certificate awarded to John Nsofwa for Build a free website with WordPress, dated 18 October 2026" loading="lazy"></button>
+      <div class="body"><h3>Build a free website with WordPress</h3><p>Coursera project certificate, 18 October 2026.</p><a class="btn p" href="https://coursera.org/verify/1HL8GANBEBHU" target="_blank" rel="noopener">Verify on Coursera</a></div>
+    </div>
+    <div class="card">
+      <button class="thumb" type="button" aria-label="View the International Project Management certificate full size"><img src="certificate2.jpg" alt="Riipen certificate awarded to John Nsofwa for completing the International Project Management project on 13 October 2026" loading="lazy"></button>
+      <div class="body"><h3>International Project Management</h3><p>Riipen project with Raise Awareness of Coaching &amp; Education, Brampton, Canada, 13 October 2026.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tutoring" class="rv">
+  <h2>Maths tutoring</h2>
+  <p class="sub">One-to-one help for university students. Choose a subject to send a request.</p>
+  <div class="grid">
+    <div class="card"><h3>Foundation Mathematics I</h3><a href="mailto:johnnsofwa200@gmail.com?subject=Tutoring%20request%3A%20Foundation%20Mathematics%20I">Request a session</a></div>
+    <div class="card"><h3>Foundation Mathematics II</h3><a href="mailto:johnnsofwa200@gmail.com?subject=Tutoring%20request%3A%20Foundation%20Mathematics%20II">Request a session</a></div>
+    <div class="card"><h3>Discrete Mathematics</h3><a href="mailto:johnnsofwa200@gmail.com?subject=Tutoring%20request%3A%20Discrete%20Mathematics">Request a session</a></div>
+  </div>
+</section>
+
+<section id="education" class="rv">
+  <h2>Education</h2>
+  <ul class="tl">
+    <li><b>Cavendish University Zambia</b><span>Bachelor of Science in Computing, 2024 to 2028 (expected)</span></li>
+    <li><b>New Matero Secondary School, Lusaka</b><span>2017 to 2019</span></li>
+  </ul>
+</section>
+
+<section id="contact" class="rv">
+  <div class="contact">
+    <div>
+      <h2>Let’s work together</h2>
+      <p>I’m open to tutoring, web projects and internships. Send a message and I’ll reply as soon as I can.</p>
+      <button class="btn s" id="copy" type="button">Copy email address</button>
+    </div>
+    <form id="cf">
+      <label>Your name<input name="n" required autocomplete="name"></label>
+      <label>Message<textarea name="m" rows="4" required></textarea></label>
+      <button class="btn p" type="submit">Send by email</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<dialog id="lb" aria-label="Certificate"><img alt=""><button class="btn p" type="button" id="lbx">Close</button></dialog>
+<dialog id="cd" aria-label="Code"><div class="bar2"><h3 id="cdt">Code</h3><div><button class="btn s" type="button" id="cdcopy">Copy code</button><button class="btn p" type="button" id="cdx">Close</button></div></div><pre><code id="cdc"></code></pre><p class="note">Demo version written to show how this kind of system works. No real operator, bank or customer data is involved.</p></dialog>
+<script type="text/plain" id="c-py">"""ZedPay Demo: a USSD mobile-money menu for Zambia (Kwacha, +260 numbers).
+
+Uses the CON / END reply style of USSD gateways such as Africa's Talking.
+CON keeps the session open, END closes it. The gateway sends all inputs so far
+joined by '*', for example "2*0961234567*50".
+Demo only: no real money moves and no operator is connected.
+"""
+import re
+
+ACCOUNTS = {
+    "0971234567": {"pin": "1234", "balance": 850.00,
+                   "history": ["Airtime K10.00", "Received K200.00"]},
+}
+ZM_NUMBER = re.compile(r"^0(9[5-7]|7[5-7])\d{7}$")   # 095-097 and 075-077
+AIRTIME = {"1": 5, "2": 10, "3": 20}
+MENU = ("CON ZedPay Demo\n1. Check balance\n2. Send money\n"
+        "3. Buy airtime\n4. Mini statement\n0. Exit")
+
+
+def handle(phone, text):
+    acc = ACCOUNTS.get(phone)
+    if not acc:
+        return "END This number is not registered."
+    p = text.split("*") if text else []
+    if not p:
+        return MENU
+    choice, step = p[0], len(p)
+
+    if choice == "0":
+        return "END Thank you. Goodbye."
+
+    if choice == "1":                                   # check balance
+        if step == 1:
+            return "CON Enter PIN:"
+        if p[1] != acc["pin"]:
+            return "END Wrong PIN."
+        return f"END Your balance is K{acc['balance']:.2f}"
+
+    if choice == "2":                                   # send money
+        if step == 1:
+            return "CON Enter recipient number:"
+        if not ZM_NUMBER.match(p[1]):
+            return "END Invalid Zambian mobile number."
+        if step == 2:
+            return "CON Enter amount (Kwacha):"
+        try:
+            amount = float(p[2])
+        except ValueError:
+            return "END Invalid amount."
+        if amount <= 0:
+            return "END Amount must be more than K0."
+        if step == 3:
+            return "CON Enter PIN:"
+        if p[3] != acc["pin"]:
+            return "END Wrong PIN."
+        if amount > acc["balance"]:
+            return "END Insufficient funds."
+        acc["balance"] -= amount
+        acc["history"].append(f"Sent K{amount:.2f} to {p[1]}")
+        return f"END Sent K{amount:.2f} to {p[1]}. New balance K{acc['balance']:.2f}"
+
+    if choice == "3":                                   # buy airtime
+        if step == 1:
+            return "CON Choose amount:\n1. K5\n2. K10\n3. K20"
+        if p[1] not in AIRTIME:
+            return "END Invalid choice."
+        if step == 2:
+            return "CON Enter PIN:"
+        if p[2] != acc["pin"]:
+            return "END Wrong PIN."
+        amount = AIRTIME[p[1]]
+        if amount > acc["balance"]:
+            return "END Insufficient funds."
+        acc["balance"] -= amount
+        acc["history"].append(f"Airtime K{amount:.2f}")
+        return f"END Airtime of K{amount:.2f} bought."
+
+    if choice == "4":                                   # mini statement
+        if step == 1:
+            return "CON Enter PIN:"
+        if p[1] != acc["pin"]:
+            return "END Wrong PIN."
+        return "END Last transactions:\n" + "\n".join(acc["history"][-3:])
+
+    return "END Invalid choice."
+
+
+def main():
+    phone = "0971234567"
+    print("ZedPay demo. Number 0971234567, PIN 1234. Dial *123#")
+    text = ""
+    reply = handle(phone, text)
+    while True:
+        print("\n" + reply[4:])
+        if reply.startswith("END"):
+            break
+        answer = input("> ").strip()
+        text = f"{text}*{answer}" if text else answer
+        reply = handle(phone, text)
+
+
+if __name__ == "__main__":
+    main()
+</script>
+<script type="text/plain" id="c-cpp">// ZedPay Demo: a USSD mobile-money menu for Zambia (Kwacha, +260 numbers).
+// Same CON / END reply style as USSD gateways. CON keeps the session open,
+// END closes it. Inputs so far are joined by '*', for example "2*0961234567*50".
+// Demo only: no real money moves and no operator is connected.
+// Build: g++ -std=c++17 ussd_zambia.cpp -o ussd
+#include <cctype>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+using namespace std;
+
+struct Account {
+    string pin = "1234";
+    double balance = 850.00;
+    vector<string> history{"Airtime K10.00", "Received K200.00"};
+};
+Account acct;   // demo number 0971234567
+
+string kwacha(double v) {
+    ostringstream o;
+    o << "K" << fixed << setprecision(2) << v;
+    return o.str();
+}
+
+vector<string> split(const string& s, char d) {
+    vector<string> out;
+    string part;
+    stringstream ss(s);
+    while (getline(ss, part, d)) out.push_back(part);
+    return out;
+}
+
+bool validZambianNumber(const string& n) {          // 095-097 and 075-077
+    if (n.size() != 10 || n[0] != '0') return false;
+    for (char c : n) if (!isdigit(static_cast<unsigned char>(c))) return false;
+    return (n[1] == '9' || n[1] == '7') && n[2] >= '5' && n[2] <= '7';
+}
+
+bool parseAmount(const string& s, double& out) {
+    try {
+        size_t used = 0;
+        out = stod(s, &used);
+        return used == s.size();
+    } catch (...) { return false; }
+}
+
+string handle(const string& text) {
+    vector<string> p = split(text, '*');
+    if (p.empty())
+        return "CON ZedPay Demo\n1. Check balance\n2. Send money\n3. Buy airtime\n4. Mini statement\n0. Exit";
+    const string& choice = p[0];
+    size_t step = p.size();
+
+    if (choice == "0") return "END Thank you. Goodbye.";
+
+    if (choice == "1") {
+        if (step == 1) return "CON Enter PIN:";
+        if (p[1] != acct.pin) return "END Wrong PIN.";
+        return "END Your balance is " + kwacha(acct.balance);
+    }
+    if (choice == "2") {
+        if (step == 1) return "CON Enter recipient number:";
+        if (!validZambianNumber(p[1])) return "END Invalid Zambian mobile number.";
+        if (step == 2) return "CON Enter amount (Kwacha):";
+        double amount;
+        if (!parseAmount(p[2], amount)) return "END Invalid amount.";
+        if (amount <= 0) return "END Amount must be more than K0.";
+        if (step == 3) return "CON Enter PIN:";
+        if (p[3] != acct.pin) return "END Wrong PIN.";
+        if (amount > acct.balance) return "END Insufficient funds.";
+        acct.balance -= amount;
+        acct.history.push_back("Sent " + kwacha(amount) + " to " + p[1]);
+        return "END Sent " + kwacha(amount) + " to " + p[1] + ". New balance " + kwacha(acct.balance);
+    }
+    if (choice == "3") {
+        if (step == 1) return "CON Choose amount:\n1. K5\n2. K10\n3. K20";
+        double amount = p[1] == "1" ? 5 : p[1] == "2" ? 10 : p[1] == "3" ? 20 : 0;
+        if (amount == 0) return "END Invalid choice.";
+        if (step == 2) return "CON Enter PIN:";
+        if (p[2] != acct.pin) return "END Wrong PIN.";
+        if (amount > acct.balance) return "END Insufficient funds.";
+        acct.balance -= amount;
+        acct.history.push_back("Airtime " + kwacha(amount));
+        return "END Airtime of " + kwacha(amount) + " bought.";
+    }
+    if (choice == "4") {
+        if (step == 1) return "CON Enter PIN:";
+        if (p[1] != acct.pin) return "END Wrong PIN.";
+        string out = "END Last transactions:";
+        size_t start = acct.history.size() > 3 ? acct.history.size() - 3 : 0;
+        for (size_t i = start; i < acct.history.size(); ++i) out += "\n" + acct.history[i];
+        return out;
+    }
+    return "END Invalid choice.";
+}
+
+int main() {
+    cout << "ZedPay demo. Number 0971234567, PIN 1234. Dial *123#\n";
+    string text, reply = handle(text);
+    while (true) {
+        cout << "\n" << reply.substr(4) << "\n";
+        if (reply.rfind("END", 0) == 0) break;
+        string answer;
+        cout << "> ";
+        if (!getline(cin, answer)) break;
+        text = text.empty() ? answer : text + "*" + answer;
+        reply = handle(text);
+    }
+    return 0;
+}
+</script>
+<script type="text/plain" id="c-inv"><?php
+// Retail and Inventory System demo: PHP + SQLite, prices in Zambian Kwacha (K).
+// Run: php -S localhost:8000   then open http://localhost:8000/inventory.php
+$db = new PDO('sqlite:' . __DIR__ . '/inventory.db');
+$db->exec('CREATE TABLE IF NOT EXISTS items(id INTEGER PRIMARY KEY, name TEXT UNIQUE, price REAL, qty INTEGER)');
+$db->exec('CREATE TABLE IF NOT EXISTS sales(id INTEGER PRIMARY KEY, item_id INTEGER, qty INTEGER, total REAL, sold_at TEXT DEFAULT CURRENT_TIMESTAMP)');
+$msg = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['add'])) {
+        $s = $db->prepare('INSERT INTO items(name,price,qty) VALUES(?,?,?)
+            ON CONFLICT(name) DO UPDATE SET qty = qty + excluded.qty, price = excluded.price');
+        $s->execute([trim($_POST['name']), (float)$_POST['price'], (int)$_POST['qty']]);
+        $msg = 'Stock saved.';
+    } elseif (isset($_POST['sell'])) {
+        $q = (int)$_POST['qty'];
+        $s = $db->prepare('SELECT * FROM items WHERE id = ?');
+        $s->execute([(int)$_POST['id']]);
+        $item = $s->fetch(PDO::FETCH_ASSOC);
+        if (!$item || $q < 1) {
+            $msg = 'Invalid sale.';
+        } elseif ($q > $item['qty']) {
+            $msg = 'Not enough stock.';
+        } else {
+            $db->prepare('UPDATE items SET qty = qty - ? WHERE id = ?')->execute([$q, $item['id']]);
+            $db->prepare('INSERT INTO sales(item_id,qty,total) VALUES(?,?,?)')
+               ->execute([$item['id'], $q, $q * $item['price']]);
+            $msg = 'Sale recorded: K' . number_format($q * $item['price'], 2);
+        }
+    }
+}
+$items = $db->query('SELECT * FROM items ORDER BY name')->fetchAll(PDO::FETCH_ASSOC);
+$today = $db->query("SELECT COALESCE(SUM(total),0) FROM sales WHERE date(sold_at) = date('now')")->fetchColumn();
+$e = fn($v) => htmlspecialchars((string)$v, ENT_QUOTES);
+?>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Inventory</title>
+<style>body{font-family:sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem}
+td,th{padding:.4rem .8rem;text-align:left}.low{color:#b00020;font-weight:bold}</style></head>
+<body>
+<h1>Retail and Inventory</h1>
+<p>Sales today: <strong>K<?= number_format($today, 2) ?></strong> <?= $msg ? '| ' . $e($msg) : '' ?></p>
+<form method="post"><input name="name" placeholder="Item" required>
+<input name="price" type="number" step="0.01" placeholder="Price (K)" required>
+<input name="qty" type="number" placeholder="Qty" required>
+<button name="add">Add or restock</button></form>
+<table><tr><th>Item</th><th>Price</th><th>In stock</th><th>Sell</th></tr>
+<?php foreach ($items as $i): ?>
+<tr><td><?= $e($i['name']) ?></td><td>K<?= number_format($i['price'], 2) ?></td>
+<td class="<?= $i['qty'] <= 5 ? 'low' : '' ?>"><?= (int)$i['qty'] ?><?= $i['qty'] <= 5 ? ' (low)' : '' ?></td>
+<td><form method="post"><input type="hidden" name="id" value="<?= (int)$i['id'] ?>">
+<input name="qty" type="number" value="1" min="1" style="width:4rem"><button name="sell">Sell</button></form></td></tr>
+<?php endforeach; ?>
+</table></body></html>
+</script>
+<script type="text/plain" id="c-log">"""Log analyzer for incident response practice.
+Finds possible brute-force attacks: many failed logins from one IP, and a
+successful login from that IP afterwards. Run: python log_analyzer.py [logfile]
+Log line format: 2026-10-12 08:01:22 FAILED user=admin ip=10.0.0.5
+Demo only: uses sample data when no file is given.
+"""
+import re
+import sys
+from collections import defaultdict
+
+SAMPLE = """2026-10-12 08:01:10 FAILED user=admin ip=10.0.0.5
+2026-10-12 08:01:12 FAILED user=admin ip=10.0.0.5
+2026-10-12 08:01:15 FAILED user=root ip=10.0.0.5
+2026-10-12 08:01:18 FAILED user=admin ip=10.0.0.5
+2026-10-12 08:01:21 FAILED user=admin ip=10.0.0.5
+2026-10-12 08:01:25 SUCCESS user=admin ip=10.0.0.5
+2026-10-12 08:03:00 SUCCESS user=mary ip=10.0.0.9
+2026-10-12 08:04:41 FAILED user=mary ip=10.0.0.9""".splitlines()
+
+LINE = re.compile(r"^(\S+ \S+) (FAILED|SUCCESS) user=(\S+) ip=(\S+)$")
+THRESHOLD = 5
+
+
+def analyze(lines):
+    fails = defaultdict(int)
+    alerts = []
+    for line in lines:
+        m = LINE.match(line.strip())
+        if not m:
+            continue
+        time, status, user, ip = m.groups()
+        if status == "FAILED":
+            fails[ip] += 1
+        elif fails[ip] >= THRESHOLD:
+            alerts.append(f"HIGH: {ip} logged in as '{user}' at {time} after {fails[ip]} failed attempts")
+    for ip, n in fails.items():
+        if n >= THRESHOLD:
+            alerts.append(f"WARN: {ip} had {n} failed logins (possible brute force)")
+    return alerts
+
+
+if __name__ == "__main__":
+    data = open(sys.argv[1]).read().splitlines() if len(sys.argv) > 1 else SAMPLE
+    for a in analyze(data) or ["No suspicious activity found."]:
+        print(a)
+</script>
+<script type="text/plain" id="c-air">// Airtel-style *117# USSD menu simulator for Zambia. UNOFFICIAL DEMO.
+// Not connected to Airtel or any network. Bundle names and prices are made-up demo values.
+// Inputs after dialing are joined by '*', for example "5*0961234567*2*1".
+// Build: g++ -std=c++17 ussd_airtel.cpp -o airtel
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+using namespace std;
+
+struct Item { string name; double price; };
+double airtime = 60.00, loan = 0;
+
+const vector<Item> IKALI  {{"Ikali 1GB + 30 min, 1 day", 5}, {"Ikali 3GB + 100 min, 7 days", 15}, {"Ikali 8GB + 300 min, 30 days", 40}};
+const vector<Item> SOCHE  {{"SoChe 60 min, 1 day", 3}, {"SoChe 300 min, 7 days", 10}};
+const vector<Item> ALLNET {{"All-network 30 min, 1 day", 5}, {"All-network 150 min, 7 days", 15}};
+const vector<vector<Item>> DATA {
+    {{"500MB, 24 hours", 3}, {"1GB, 24 hours", 5}},
+    {{"2GB, 7 days", 12}, {"5GB, 7 days", 25}},
+    {{"10GB, 30 days", 45}, {"25GB, 30 days", 90}}};
+
+string kwacha(double v) { ostringstream o; o << "K" << fixed << setprecision(2) << v; return o.str(); }
+
+vector<string> split(const string& s, char d) {
+    vector<string> out; string part; stringstream ss(s);
+    while (getline(ss, part, d)) out.push_back(part);
+    return out;
+}
+
+bool validZambianNumber(const string& n) {
+    if (n.size() != 10 || n[0] != '0') return false;
+    for (char c : n) if (c < '0' || c > '9') return false;
+    return (n[1] == '9' || n[1] == '7') && n[2] >= '5' && n[2] <= '7';
+}
+
+// Shows a list, then a confirm step, then charges the airtime balance.
+string offer(const vector<Item>& items, const vector<string>& p, size_t i, const string& who) {
+    if (p.size() == i) {
+        string out = "CON Choose a bundle:";
+        for (size_t k = 0; k < items.size(); ++k)
+            out += "\n" + to_string(k + 1) + ". " + items[k].name + " (" + kwacha(items[k].price) + ")";
+        return out + "\n0. Cancel";
+    }
+    if (p[i] == "0") return "END Cancelled.";
+    size_t idx = p[i].size() == 1 ? p[i][0] - '1' : 99;
+    if (idx >= items.size()) return "END Invalid choice.";
+    const Item& it = items[idx];
+    string target = who.empty() ? "" : " for " + who;
+    if (p.size() == i + 1)
+        return "CON Buy " + it.name + target + " for " + kwacha(it.price) + "?\n1. Confirm\n0. Cancel";
+    if (p[i + 1] != "1") return "END Cancelled.";
+    if (it.price > airtime) return "END Insufficient airtime. Balance " + kwacha(airtime);
+    airtime -= it.price;
+    return "END " + it.name + " bought" + target + ". Balance " + kwacha(airtime);
+}
+
+string handle(const string& text) {
+    vector<string> p = split(text, '*');
+    size_t n = p.size();
+    if (n == 0)
+        return "CON Welcome (demo)\n1. Ikali - Data and Voice\n2. SoChe Pack\n3. All networks SoChe\n4. Data Packs\n5. Buy for Other\n6. Balance Check\n7. Siliza - Airtime Loan\n8. Get the App\n9. INTL calling & roaming\n0. Exit";
+    const string& c = p[0];
+    if (c == "0") return "END Session closed. Goodbye!";
+    if (c == "1") return offer(IKALI, p, 1, "");
+    if (c == "2") return offer(SOCHE, p, 1, "");
+    if (c == "3") return offer(ALLNET, p, 1, "");
+    if (c == "4") {
+        if (n == 1) return "CON Data packs:\n1. Daily (24 hours)\n2. Weekly (7 days)\n3. Monthly (30 days)\n0. Cancel";
+        if (p[1] == "0") return "END Cancelled.";
+        if (p[1] != "1" && p[1] != "2" && p[1] != "3") return "END Invalid choice.";
+        return offer(DATA[p[1][0] - '1'], p, 2, "");
+    }
+    if (c == "5") {
+        if (n == 1) return "CON Enter the number to buy for:";
+        if (!validZambianNumber(p[1])) return "END Invalid Zambian mobile number.";
+        return offer(IKALI, p, 2, p[1]);
+    }
+    if (c == "6")
+        return "END Airtime: " + kwacha(airtime) + "\nData: 1.2GB (demo)" + (loan > 0 ? "\nSiliza loan due: " + kwacha(loan) : "");
+    if (c == "7") {
+        if (loan > 0) return "END You have an unpaid Siliza loan of " + kwacha(loan) + ".";
+        if (n == 1) return "CON Siliza airtime loan (10% fee):\n1. K5\n2. K10\n0. Cancel";
+        if (p[1] == "0") return "END Cancelled.";
+        double a = p[1] == "1" ? 5 : p[1] == "2" ? 10 : 0;
+        if (a == 0) return "END Invalid choice.";
+        if (n == 2) return "CON Borrow " + kwacha(a) + ". You will repay " + kwacha(a * 1.1) + ".\n1. Confirm\n0. Cancel";
+        if (p[2] != "1") return "END Cancelled.";
+        airtime += a; loan = a * 1.1;
+        return "END You received " + kwacha(a) + " airtime. Balance " + kwacha(airtime);
+    }
+    if (c == "8") return "END A download link has been sent by SMS (demo).";
+    if (c == "9") {
+        if (n == 1) return "CON International:\n1. Activate roaming\n2. Calling rates\n0. Cancel";
+        if (p[1] == "1") return "END Roaming request received (demo).";
+        if (p[1] == "2") return "END Rates are not part of this demo.";
+        return "END Cancelled.";
+    }
+    return "END Invalid choice.";
+}
+
+int main() {
+    string dial;
+    cout << "Airtel-style USSD simulator (unofficial demo)\n";
+    while (true) {
+        cout << "Dial the code (*117#): ";
+        if (!getline(cin, dial)) return 0;
+        if (dial == "*117#") break;
+        cout << "Invalid USSD code.\n";
+    }
+    string text, reply = handle(text);
+    while (true) {
+        cout << "\n" << reply.substr(4) << "\n";
+        if (reply.rfind("END", 0) == 0) break;
+        string answer;
+        cout << "> ";
+        if (!getline(cin, answer)) break;
+        text = text.empty() ? answer : text + "*" + answer;
+        reply = handle(text);
+    }
+    return 0;
+}
+</script>
+<script>var airtelState={air:60,loan:0};
+function airtelUssd(text){
+  var S=airtelState,M=function(v){return 'K'+v.toFixed(2)};
+  var IK=[['Ikali 1GB + 30 min, 1 day',5],['Ikali 3GB + 100 min, 7 days',15],['Ikali 8GB + 300 min, 30 days',40]],
+      SO=[['SoChe 60 min, 1 day',3],['SoChe 300 min, 7 days',10]],
+      AL=[['All-network 30 min, 1 day',5],['All-network 150 min, 7 days',15]],
+      DA=[[['500MB, 24 hours',3],['1GB, 24 hours',5]],[['2GB, 7 days',12],['5GB, 7 days',25]],[['10GB, 30 days',45],['25GB, 30 days',90]]];
+  function offer(items,p,i,who){
+    if(p.length===i)return 'CON Choose a bundle:'+items.map(function(x,k){return '\n'+(k+1)+'. '+x[0]+' ('+M(x[1])+')'}).join('')+'\n0. Cancel';
+    if(p[i]==='0')return 'END Cancelled.';
+    var it=p[i].length===1?items[p[i].charCodeAt(0)-49]:null;
+    if(!it)return 'END Invalid choice.';
+    var t=who?' for '+who:'';
+    if(p.length===i+1)return 'CON Buy '+it[0]+t+' for '+M(it[1])+'?\n1. Confirm\n0. Cancel';
+    if(p[i+1]!=='1')return 'END Cancelled.';
+    if(it[1]>S.air)return 'END Insufficient airtime. Balance '+M(S.air);
+    S.air-=it[1];return 'END '+it[0]+' bought'+t+'. Balance '+M(S.air);
+  }
+  var p=text?text.split('*'):[],n=p.length,c=p[0],a;
+  if(!n)return 'CON Welcome (demo)\n1. Ikali - Data and Voice\n2. SoChe Pack\n3. All networks SoChe\n4. Data Packs\n5. Buy for Other\n6. Balance Check\n7. Siliza - Airtime Loan\n8. Get the App\n9. INTL calling & roaming\n0. Exit';
+  if(c==='0')return 'END Session closed. Goodbye!';
+  if(c==='1')return offer(IK,p,1,'');
+  if(c==='2')return offer(SO,p,1,'');
+  if(c==='3')return offer(AL,p,1,'');
+  if(c==='4'){
+    if(n===1)return 'CON Data packs:\n1. Daily (24 hours)\n2. Weekly (7 days)\n3. Monthly (30 days)\n0. Cancel';
+    if(p[1]==='0')return 'END Cancelled.';
+    if(['1','2','3'].indexOf(p[1])<0)return 'END Invalid choice.';
+    return offer(DA[+p[1]-1],p,2,'');
+  }
+  if(c==='5'){
+    if(n===1)return 'CON Enter the number to buy for:';
+    if(!/^0(9[5-7]|7[5-7])\d{7}$/.test(p[1]))return 'END Invalid Zambian mobile number.';
+    return offer(IK,p,2,p[1]);
+  }
+  if(c==='6')return 'END Airtime: '+M(S.air)+'\nData: 1.2GB (demo)'+(S.loan>0?'\nSiliza loan due: '+M(S.loan):'');
+  if(c==='7'){
+    if(S.loan>0)return 'END You have an unpaid Siliza loan of '+M(S.loan)+'.';
+    if(n===1)return 'CON Siliza airtime loan (10% fee):\n1. K5\n2. K10\n0. Cancel';
+    if(p[1]==='0')return 'END Cancelled.';
+    a=p[1]==='1'?5:p[1]==='2'?10:0;if(!a)return 'END Invalid choice.';
+    if(n===2)return 'CON Borrow '+M(a)+'. You will repay '+M(a*1.1)+'.\n1. Confirm\n0. Cancel';
+    if(p[2]!=='1')return 'END Cancelled.';
+    S.air+=a;S.loan=a*1.1;return 'END You received '+M(a)+' airtime. Balance '+M(S.air);
+  }
+  if(c==='8')return 'END A download link has been sent by SMS (demo).';
+  if(c==='9'){
+    if(n===1)return 'CON International:\n1. Activate roaming\n2. Calling rates\n0. Cancel';
+    if(p[1]==='1')return 'END Roaming request received (demo).';
+    if(p[1]==='2')return 'END Rates are not part of this demo.';
+    return 'END Cancelled.';
+  }
+  return 'END Invalid choice.';
+}
+</script>
+<button id="top" type="button" aria-label="Back to top">↑</button>
+<footer><div class="wrap">© 2026 John Nsofwa. Lusaka, Zambia.</div></footer>
+
+<script>
+(function(){
+  var d=document,r=d.documentElement,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  r.classList.add('js');
+  var b=d.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+  function dark(){var t=r.getAttribute('data-theme');return t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches}
+  function label(){b.textContent=dark()?'Light':'Dark'}
+  label();
+  b.onclick=function(){var n=dark()?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}label()};
+
+  var bar=d.getElementById('bar'),top=d.getElementById('top');
+  function sc(){var h=r.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%';top.classList.toggle('show',scrollY>600)}
+  addEventListener('scroll',sc,{passive:true});sc();
+  top.onclick=function(){scrollTo({top:0})};
+
+  var links=[].slice.call(d.querySelectorAll('nav a')),secs=links.map(function(a){return d.querySelector(a.getAttribute('href'))});
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    secs.forEach(function(x){if(x)so.observe(x)});
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{threshold:.12});
+    d.querySelectorAll('.rv').forEach(function(x){ro.observe(x)});
+    var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,to=+el.dataset.to;if(rm){el.textContent=to;return}var t0=null;(function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/900,1);el.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f)})(performance.now())})});
+    d.querySelectorAll('[data-to]').forEach(function(x){x.textContent='0';co.observe(x)});
+  }else{d.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')})}
+
+  var words=['web projects','cyber security coursework','project management','maths tutoring'],wi=0,ci=0,del=false,ty=d.getElementById('type');
+  if(!rm){ty.textContent='';(function tick(){var w=words[wi];ci+=del?-1:1;ty.textContent=w.slice(0,ci);var t=del?30:70;if(!del&&ci===w.length){del=true;t=1400}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;t=300}setTimeout(tick,t)})()}
+
+  var fb=d.querySelectorAll('.filters button'),cards=d.querySelectorAll('#plist .card');
+  fb.forEach(function(x){x.onclick=function(){fb.forEach(function(y){y.setAttribute('aria-pressed',y===x)});var f=x.dataset.f;cards.forEach(function(c){c.hidden=!(f==='all'||c.dataset.c.split(' ').indexOf(f)>-1)})}});
+
+  var lb=d.getElementById('lb'),li=lb.querySelector('img');
+  d.querySelectorAll('.thumb').forEach(function(t){t.onclick=function(){var i=t.querySelector('img');li.src=i.src;li.alt=i.alt;lb.showModal()}});
+  d.getElementById('lbx').onclick=function(){lb.close()};
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+
+  var cd=d.getElementById('cd'),cdc=d.getElementById('cdc');
+  d.querySelectorAll('[data-code]').forEach(function(x){x.onclick=function(){cdc.textContent=d.getElementById('c-'+x.dataset.code).textContent.trim();d.getElementById('cdt').textContent=x.dataset.t;cd.showModal()}});
+  d.getElementById('cdx').onclick=function(){cd.close()};
+  cd.addEventListener('click',function(e){if(e.target===cd)cd.close()});
+  var cb=d.getElementById('cdcopy');
+  cb.onclick=function(){if(navigator.clipboard){navigator.clipboard.writeText(cdc.textContent).then(function(){cb.textContent='Copied';setTimeout(function(){cb.textContent='Copy code'},1500)})}};
+
+  var acc={pin:'1234',bal:850,h:['Airtime K10.00','Received K200.00']};
+  function K(v){return 'K'+v.toFixed(2)}
+  var eng="zed";
+  function ussd(t){return eng==="zed"?zed(t):airtelUssd(t)}
+  function zed(t){
+    var p=t?t.split('*'):[],c=p[0],n=p.length,a;
+    if(!n)return 'CON ZedPay Demo\n1. Check balance\n2. Send money\n3. Buy airtime\n4. Mini statement\n0. Exit';
+    if(c==='0')return 'END Thank you. Goodbye.';
+    if(c==='1'){if(n==1)return 'CON Enter PIN:';return p[1]!==acc.pin?'END Wrong PIN.':'END Your balance is '+K(acc.bal)}
+    if(c==='2'){
+      if(n==1)return 'CON Enter recipient number:';
+      if(!/^0(9[5-7]|7[5-7])\d{7}$/.test(p[1]))return 'END Invalid Zambian mobile number.';
+      if(n==2)return 'CON Enter amount (Kwacha):';
+      a=Number(p[2]);if(!(a>0))return 'END Invalid amount.';
+      if(n==3)return 'CON Enter PIN:';
+      if(p[3]!==acc.pin)return 'END Wrong PIN.';
+      if(a>acc.bal)return 'END Insufficient funds.';
+      acc.bal-=a;acc.h.push('Sent '+K(a)+' to '+p[1]);
+      return 'END Sent '+K(a)+' to '+p[1]+'. New balance '+K(acc.bal);
+    }
+    if(c==='3'){
+      if(n==1)return 'CON Choose amount:\n1. K5\n2. K10\n3. K20';
+      a={'1':5,'2':10,'3':20}[p[1]];if(!a)return 'END Invalid choice.';
+      if(n==2)return 'CON Enter PIN:';
+      if(p[2]!==acc.pin)return 'END Wrong PIN.';
+      if(a>acc.bal)return 'END Insufficient funds.';
+      acc.bal-=a;acc.h.push('Airtime '+K(a));return 'END Airtime of '+K(a)+' bought.';
+    }
+    if(c==='4'){if(n==1)return 'CON Enter PIN:';return p[1]!==acc.pin?'END Wrong PIN.':'END Last transactions:\n'+acc.h.slice(-3).join('\n')}
+    return 'END Invalid choice.';
+  }
+  var scr=d.getElementById('scr'),uin=d.getElementById('uin'),usend=d.getElementById('usend'),txt='';
+  var term=false,last='';
+  function paint(){scr.textContent=(term&&last?'$ ussd '+(txt?txt.split('*').join(' > '):'*123#')+'\n\n':'')+last.slice(4)}
+  function show(r){last=r;paint();var live=r.indexOf('CON')===0;uin.disabled=usend.disabled=!live;uin.value='';if(live)uin.focus()}
+  var INFO={zed:['The ZedPay menu from the Python and C++ code. Use number 0971234567 and PIN 1234. No real money moves.',['Press Dial, then enter 2 to send money.','Enter a Zambian number such as 0961234567.','Enter an amount and the PIN.','Dial again and choose 4 to see the mini statement.']],air:['An unofficial demo of a telecom menu, matching the C++ code. It is not connected to Airtel or any network, and the prices are made-up. Demo airtime starts at K60.00.',['Press Dial *117# to open the main menu.','Enter 4, then 2, then 2 to pick a weekly 5GB pack.','Enter 1 to confirm and see your new balance.','Try 7 for a Siliza-style airtime loan or 5 to buy for another number.']]};
+  function setEng(e){eng=e;txt='';last='';d.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.e===e)});d.getElementById('dial').textContent='Dial '+(e==='zed'?'*123#':'*117#');d.getElementById('ed').textContent=INFO[e][0];d.getElementById('steps').innerHTML=INFO[e][1].map(function(x){return '<li>'+x+'</li>'}).join('');scr.textContent='Press Dial to start.';uin.disabled=usend.disabled=true;uin.value=''}
+  d.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){setEng(b.dataset.e)}});
+  d.querySelectorAll('.elink').forEach(function(a){a.addEventListener('click',function(){setEng(a.dataset.e)})});
+  setEng('zed');
+  d.getElementById('tmode').onclick=function(){term=!term;this.setAttribute('aria-pressed',term);this.textContent=term?'Phone view':'Terminal view';d.querySelector('.phone').classList.toggle('term',term);if(last)paint()};
+  d.getElementById('dial').onclick=function(){txt='';show(ussd(txt))};
+  d.getElementById('uf').onsubmit=function(e){e.preventDefault();var v=uin.value.trim();if(!v)return;txt=txt?txt+'*'+v:v;show(ussd(txt))};
+
+  var c=d.getElementById('copy');
+  c.onclick=function(){var t='johnnsofwa200@gmail.com';if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){c.textContent='Copied'},function(){c.textContent=t})}else{c.textContent=t}};
+  d.getElementById('cf').onsubmit=function(e){e.preventDefault();var f=e.target;location.href='mailto:johnnsofwa200@gmail.com?subject='+encodeURIComponent('Portfolio message from '+f.n.value)+'&body='+encodeURIComponent(f.m.value)};
+})();
+</script>
+</body>
+</html>
